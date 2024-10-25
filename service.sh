@@ -30,13 +30,13 @@ enable_sus_su(){
 
 ## Enable sus_su ##
 ## Uncomment this if you are using kprobe hooks ksu, make sure CONFIG_KSU_SUSFS_SUS_SU config is enabled when compiling kernel ##
-#enable_sus_su
+enable_sus_su
 
 ## Disable susfs kernel log ##
 #${SUSFS_BIN} enable_log 0
 
 ## Hide for Systemless host for ksu ##
 # right timing for hide mount of /system/etc so it doesn't trigger futile hide
-sleep 1s
+sleep 2s
 ${SUSFS_BIN} add_sus_mount /system/etc
 ${SUSFS_BIN} add_try_umount /system/etc 1
