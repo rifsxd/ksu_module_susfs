@@ -9,6 +9,7 @@ This module provides root hiding for KernelSU on the kernel level.
 - Do not mix/install with other root-hiding modules such as shamiko or zygisk assistant.
 - HideMyApplist is acceptable
 - Revanced root module compatible
+- Zygisk detach is acceptable
 - Recommended to use [systemless-hosts-KernelSU-module by symbuzzer](https://github.com/symbuzzer/systemless-hosts-KernelSU-module) if you want to use systemless hosts
 
 ## Credits

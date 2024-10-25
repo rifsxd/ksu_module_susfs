@@ -11,6 +11,9 @@ ${SUSFS_BIN} add_sus_path /system/addon.d
 ${SUSFS_BIN} add_sus_path /vendor/bin/install-recovery.sh
 ${SUSFS_BIN} add_sus_path /system/bin/install-recovery.sh
 
+#Zygisk detach
+${SUSFS_BIN} add_sus_path /system/bin/detach
+
 #KernelSU
 ${SUSFS_BIN} add_sus_mount /data/adb/modules
 ${SUSFS_BIN} add_sus_mount /debug_ramdisk
