@@ -27,15 +27,17 @@ fi
 
 force_hide_lsposed=0
 spoof_uname=0
+kernel_version='default'
+kernel_build='default'
 [ -f $PERSISTENT_DIR/config.sh ] && . $PERSISTENT_DIR/config.sh
 
 echo "susfs4ksu/post-fs-data: [logging_initialized]" > $logfile1
 
 # if spoof_uname is on mode 2, set_uname will be called here
 [ $spoof_uname = 2 ] && {
-	[ -f "$PERSISTENT_DIR/kernelversion.txt" ] || kernel_ver="default"
-	[ -z "$kernel_ver" ] && kernel_ver="default"
-    ${SUSFS_BIN} set_uname $kernel_ver 'default'
+	[ -z $kernel_version ] && kernel_version='default'
+	[ -z $kernel_build ] && kernel_build='default'
+    ${SUSFS_BIN} set_uname "$kernel_version" "$kernel_build"
 }
 
 #### Enable sus_su ####

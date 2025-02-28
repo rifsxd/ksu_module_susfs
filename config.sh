@@ -11,3 +11,5 @@ hide_loops=1
 force_hide_lsposed=0
 spoof_uname=0
 fake_service_list=0
+kernel_version='default'
+kernel_build='default'
