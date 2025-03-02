@@ -1,3 +1,21 @@
+## v1.5.2+ Revision 16
+### WebUI
+* Add spoof kernel build for spoof Kernel Uname
+* Deprecate SUS_SU error message
+* Add Spoof Service List in Custom settings
+* objectify sus_su variables in sus_su_toggle
+* Refactor and fix sus_su toggle functions
+* Do not show sus_su is not available message when the kernel is NON-GKI
+### Scripts
+* scripts: add kernel build for spoof kernel uname on boot and add spoof variables in config.sh
+* scripts/post-fs-data: no need for sus_mount when try_umount Thanks (@backslashxx)
+* scripts/boot-completed: no need to delete webroot Thanks (@backslashxx)
+* scripts/boot-completed: fix dynamic version to support for ci builds
+* scripts/service: fix race conditions on sus_su
+* scripts/service: Revert "feat(service.sh): Add final susfs activity check for sus_su=-1"
+* scripts/customize: harden remote binary dl logic Thanks (@backslashxx)
+* scripts/customize: add generic download function and use it Thanks (@backslashxx)
+
 ## v1.5.2+ Revision 15
 ### WebUI
 * Check if it's NON-GKI then it will show that SUS_SU is not supported 
