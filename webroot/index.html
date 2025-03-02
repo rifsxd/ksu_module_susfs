@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
   <script type="module" crossorigin src="/assets/fade-DXKTELhO.js"></script>
-  <script type="module" crossorigin src="/assets/index-P9jIx-0b.js"></script>
+  <script type="module" crossorigin src="/assets/index-CSNvbP9q.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-Ci4WSRIA.css">
 </head>
 
@@ -69,14 +69,6 @@
 								<span class="text-white text-2xl">SUSFS Logs</span>
 								<input type="checkbox" id="susfs_log" class="toggle toggle-primary" checked="checked" />
 							  </label>
-							</div>
-							<div id="sus_su_NOS" class="form-control hidden">
-								<label class="label cursor-pointer">
-								  <span class="text-white text-lg" id="sus_su_msg">SUS SU is not available in your kernel</span>
-								  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-yellow-500 dark:text-yellow-500">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-								  </svg>																		
-								</label>
 							</div>
 							<!--this one is for 1.5.2+ if the user force enables sus_su 1-->
 							<div id="sus_su_1" class="form-control hidden">
@@ -174,12 +166,14 @@
 				  </div>
 				  <div class="stats flex flex-col bg-cyan-100/20 dark:bg-black/20 mt-5 border-2 border-white backdrop-blur-[2.5px]">
 					<div class="stat">
-						<div class="stat-title text-2xl text-white">Kernel Version</div>
+						<div class="stat-title text-2xl text-white">Kernel Uname</div>
 						<p class="text-white text-sm break-all font-sans" id="kernel_version"></p>
 					</div>
 					<div class="stat">
 						<div class="stat-title text-2xl text-white">Spoof Kernel Version</div>
 						<input type="text" id="sus_uname" placeholder="default" class="input text-sm font-sans w-full"/>
+						<div class="stat-title text-2xl text-white">Spoof Kernel Build</div>
+						<input type="text" id="sus_uname_build" placeholder="default" class="input text-sm font-sans w-full"/>
 						<div class="form-control">
 							<label class="label cursor-pointer">
 							<span class="text-white text-lg font-amongus2">Spoof on boot</span>
