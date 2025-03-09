@@ -11,6 +11,25 @@ This module provides root hiding for KernelSU on the kernel level.
 - ReVanced root module compatible
 - Recommended to use [bindhosts](https://github.com/backslashxx/bindhosts) if you want to use systemless hosts
 
+## Spoofing Kernel Uname guide on Revision 16+
+In the new R16 of SUSFS includes a new parameter called "Spoof Kernel Build". this may confuse some users about what those are.
+
+In the kernel version it affects this part:
+```
+6.1.75-android14-11-g16c5f6cd5e9b-ab12268515
+```
+While on the Kernel Build part is this:
+```
+#1 SMP PREEMPT Fri Aug 23 03:08:10 UTC 2024
+```
+You may check them by using these commands:
+```
+#This is for the Kernel Version
+uname -r
+#This is for the Kernel Build
+uname -v
+```
+
 ## Adding ro.boot.vbmeta.digest value
 This module will now have a directory called `VerifiedBootHash` in `/data/adb` containing `VerifiedBootHash.txt` for users with missing `ro.boot.vbmeta.digest` value to prevent partition modified and abnormal boot state detection. 
 - Copy your VerifiedBootHash in the Key Attestation demo and paste it to `/data/adb/VerifiedBootHash/VerifiedBootHash.txt`
