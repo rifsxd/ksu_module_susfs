@@ -187,7 +187,6 @@ fi
 }
 
 sleep 15;
-dmesg | grep ksu_susfs > ${MODDIR}/susfslogs.txt
 dmesg | grep susfs_auto_add > $logfile
 dmesg | grep ksu_susfs >> $logfile
 # susfs stats
