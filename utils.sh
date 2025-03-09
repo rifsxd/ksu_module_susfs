@@ -1,5 +1,8 @@
 #!/bin/sh
 PATH=/data/adb/ksu/bin:$PATH
+kernel_version='default'
+kernel_build='default'
+[ -f $PERSISTENT_DIR/config.sh ] && . $PERSISTENT_DIR/config.sh
 ## susfs_clone_perm <file/or/dir/perm/to/be/changed> <file/or/dir/to/clone/from>
 susfs_clone_perm() {
 	TO=$1
@@ -48,4 +51,10 @@ contains_reset_prop() {
   local CONTAINS=$2
   local NEWVAL=$3
   [[ "$(resetprop $NAME)" = *"$CONTAINS"* ]] && resetprop $NAME $NEWVAL
+}
+
+spoof_uname() {
+	[ -z $kernel_version ] && kernel_version='default'
+	[ -z $kernel_build ] && kernel_build='default'
+	${SUSFS_BIN} set_uname "$kernel_version" "$kernel_build"
 }

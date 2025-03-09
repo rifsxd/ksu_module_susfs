@@ -15,8 +15,6 @@ hide_cusrom=0
 hide_gapps=0
 hide_revanced=0
 spoof_uname=0
-kernel_version='default'
-kernel_build='default'
 [ -f $PERSISTENT_DIR/config.sh ] && . $PERSISTENT_DIR/config.sh
 
 # update description
@@ -37,12 +35,7 @@ fi
 # routines
 
 # if spoof_uname is on mode 1, set_uname will be called here
-[ $spoof_uname = 1 ] && {
-	[ -z $kernel_version ] && kernel_version='default'
-	[ -z $kernel_build ] && kernel_build='default'
-    ${SUSFS_BIN} set_uname "$kernel_version" "$kernel_build"
-}
-
+[ $spoof_uname = 1 ] && spoof_uname
 # echo "hide_cusrom=1" >> /data/adb/susfs4ksu/config.sh
 [ $hide_cusrom = 1 ] && {
     echo "susfs4ksu/boot-completed: [hide_cusrom]" >> $logfile1

@@ -27,19 +27,12 @@ fi
 
 force_hide_lsposed=0
 spoof_uname=0
-kernel_version='default'
-kernel_build='default'
 [ -f $PERSISTENT_DIR/config.sh ] && . $PERSISTENT_DIR/config.sh
 
 echo "susfs4ksu/post-fs-data: [logging_initialized]" > $logfile1
 
 # if spoof_uname is on mode 2, set_uname will be called here
-[ $spoof_uname = 2 ] && {
-	[ -z $kernel_version ] && kernel_version='default'
-	[ -z $kernel_build ] && kernel_build='default'
-    ${SUSFS_BIN} set_uname "$kernel_version" "$kernel_build"
-}
-
+[ $spoof_uname = 2 ] && spoof_uname
 #### Enable sus_su ####
 enable_sus_su_mode_1(){
   ## Here we manually create an system overlay an copy the sus_su and sus_su_drv_path to ${MODDIR}/system/bin after sus_su is enabled,
