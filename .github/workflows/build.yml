@@ -2,7 +2,15 @@ name: Build and Release
 
 on:
   push:
+    paths-ignore:
+      - 'README.md'
+      - '*.md'
+      - 'docs/**'
   pull_request:
+    paths-ignore:
+      - 'README.md'
+      - '*.md'
+      - 'docs/**'
   workflow_dispatch:
 
 jobs:
