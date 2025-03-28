@@ -6,6 +6,7 @@ on:
       - 'README.md'
       - '*.md'
       - 'docs/**'
+      - '.github/ISSUE_TEMPLATE/**'
   pull_request:
     paths-ignore:
       - 'README.md'
