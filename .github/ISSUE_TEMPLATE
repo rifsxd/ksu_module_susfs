@@ -1,0 +1,47 @@
+name: Bug/Conflict Report
+description: File a report about a bug or conflict with SUSFS4KSU.
+title: "[Bug][Conflict]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before you submit a bug report, check out this one first [here](https://github.com/sidex15/susfs4ksu-module/issues/16).
+  - type: input
+    id: kernel-version
+    attributes:
+      label: Kernel Version
+      description: What kernel version are you using?
+      placeholder: 4.14.355-n3x7g3n+
+    validations:
+      required: true
+  - type: input
+    id: kernel-source
+    attributes:
+      label: Kernel Source/Download
+      description: What's Your kernel and where's the source code of it?
+    validations:
+      required: true
+  - type: input
+    id: susfs-version
+    attributes:
+      label: SUSFS Version
+    validations:
+      required: true
+  - type: textarea
+    id: susfs-settings
+    attributes:
+      label: SUSFS Settings
+      description: |
+        What are your SUSFS settings? Including the custom sus_path, sus_mount, and try_umount list.
+        The susfs settings (config.sh) are located in /data/adb/susfs/config.sh. The custom sus_path, sus_mount, and try_umount list are located in the same path as the config.sh file.
+      value: "SUSFS Settings"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: State your problem and when does happen and all troubleshoots you attempted.
+      value: "What happened?"
+    validations:
+      required: true
