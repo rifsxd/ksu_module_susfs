@@ -11,6 +11,9 @@ This module provides root hiding for KernelSU on the kernel level.
 - ReVanced root module compatible
 - Recommended to use [bindhosts](https://github.com/backslashxx/bindhosts) if you want to use systemless hosts
 
+## SUSFS Custom settings documentation
+https://github.com/sidex15/susfs4ksu-module/wiki/SUSFS-Custom-Settings
+
 ## Spoofing Kernel Uname guide on Revision 16+
 In the new R16 of SUSFS includes a new parameter called "Spoof Kernel Build". this may confuse some users about what those are.
 
