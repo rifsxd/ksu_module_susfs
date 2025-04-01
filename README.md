@@ -6,7 +6,7 @@ This module provides root hiding for KernelSU on the kernel level.
 ## Notes
 - Make sure you have a custom kernel with SUSFS patched in it. Check the custom kernel source to see if it has SUSFS.
 - Make sure the kernel is using SUSFS 1.5.2 or later for effective hide.
-- Shamiko v1.2.1 or later is acceptable
+- Shamiko v1.2.1 or later is acceptable (but it's highly optional to use it)
 - HideMyApplist is acceptable
 - ReVanced root module compatible
 - Recommended to use [bindhosts](https://github.com/backslashxx/bindhosts) if you want to use systemless hosts
