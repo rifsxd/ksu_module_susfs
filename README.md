@@ -38,8 +38,11 @@ This module will now have a directory called `VerifiedBootHash` in `/data/adb` c
 - Copy your VerifiedBootHash in the Key Attestation demo and paste it to `/data/adb/VerifiedBootHash/VerifiedBootHash.txt`
 
 ## Localization (CI Version)
-If you want to contribute for the translation please use the `webui` branch and follow the format of the xml file in `./languages` and make a pull request. <br>
-Don't worry it will release officially soon 😊
+If you want to contribute to add your own language, use the `webui` branch and add your translations in the `./languages` directory. Make sure to test the implementation thoroughly before submitting a pull request.
+Also, the name of the XML files should be the same as the language code, for example:
+- For English, the file should be named `en.xml`
+- For Spanish, the file should be named `es.xml` <br>
+Don't worry; it will release officially soon 😊
 
 ## Credits
 susfs4ksu: https://gitlab.com/simonpunk/susfs4ksu/
