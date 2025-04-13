@@ -41,7 +41,8 @@ This module will now have a directory called `VerifiedBootHash` in `/data/adb` c
 If you want to contribute to add your own language, use the `webui` branch and add your translations in the `./languages` directory. Make sure to test the implementation thoroughly before submitting a pull request.
 Also, the name of the XML files should be the same as the language code, for example:
 - For English, the file should be named `en.xml`
-- For Spanish, the file should be named `es.xml` <br>
+- For Spanish, the file should be named `es.xml`
+
 Don't worry; it will release officially soon 😊
 
 ## Credits
