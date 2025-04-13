@@ -37,6 +37,10 @@ uname -v
 This module will now have a directory called `VerifiedBootHash` in `/data/adb` containing `VerifiedBootHash.txt` for users with missing `ro.boot.vbmeta.digest` value to prevent partition modified and abnormal boot state detection. 
 - Copy your VerifiedBootHash in the Key Attestation demo and paste it to `/data/adb/VerifiedBootHash/VerifiedBootHash.txt`
 
+## Localization (CI Version)
+If you want to contribute for the translation please use the `webui` branch and follow the format of the xml file in `./languages` and make a pull request. <br>
+Don't worry it will release officially soon 😊
+
 ## Credits
 susfs4ksu: https://gitlab.com/simonpunk/susfs4ksu/
 
