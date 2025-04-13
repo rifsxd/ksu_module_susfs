@@ -43,7 +43,7 @@ Also, the name of the XML files should be the same as the language code, for exa
 - For English, the file should be named `en.xml`
 - For Spanish, the file should be named `es.xml`
 
-Then add your language to the `./languages/languages.json` so it will be inluded to the language drop down menu. <br>
+Then add your language to the `./languages/languages.json` so it will be included in the language drop-down menu. <br>
 
 Don't worry; it will release officially soon 😊
 
