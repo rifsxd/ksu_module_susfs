@@ -1,3 +1,26 @@
+## v1.5.2+ Revision 17
+### WebUI
+* Add Localization
+  * Currently Supported languages:
+    * English
+    * 中文 (Thanks @ITxiao6666)
+    * Indonesia (Thanks @imnathanzero)
+    * Português (Thanks @pedroborraz)
+    * Türkçe (Thanks @MematiBas42)
+    * Español (Thanks UserDeleted74 from telegram)
+    * Français (Thanks UserDeleted74 from telegram)
+  * If you want to contribute for a translation follow the README and make a pull request.
+* Change Main Menu and Custom settings fonts to AmaticSC
+* Some UI Adjustments
+* Disable all settings under hide custom rom paths when disable
+* Declutter Code
+### Scripts
+* scripts/service/utils: add more vbmeta props
+* scripts/service: remove generating susfslogs.txt on the module folder
+* scripts: simplify and debloat codes on sus_su on boot.
+* scripts/service: correct undefined $i variable in log output statements (Thanks @chisewaguri)
+* scripts: move mounting directory to $MODDIR
+
 ## v1.5.2+ Revision 16
 ### WebUI
 * Add spoof kernel build for spoof Kernel Uname
