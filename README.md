@@ -37,7 +37,7 @@ uname -v
 This module will now have a directory called `VerifiedBootHash` in `/data/adb` containing `VerifiedBootHash.txt` for users with missing `ro.boot.vbmeta.digest` value to prevent partition modified and abnormal boot state detection. 
 - Copy your VerifiedBootHash in the Key Attestation demo and paste it to `/data/adb/VerifiedBootHash/VerifiedBootHash.txt`
 
-## Localization (CI Version)
+## Localization
 If you want to contribute to add your own language, use the `webui` branch and add your translations in the `./languages` directory. Make sure to test the implementation thoroughly before submitting a pull request.
 Also, the name of the XML files should be the same as the language code, for example:
 - For English, the file should be named `en.xml`
@@ -50,7 +50,8 @@ Then add your language to the `./languages/languages.json` with this format:
 ```
 so it will be included in the language drop-down menu. <br>
 
-Don't worry; it will release officially soon 😊
+~~Don't worry; it will release officially soon 😊~~
+Released on Revision 17 🚀
 
 ## Credits
 susfs4ksu: https://gitlab.com/simonpunk/susfs4ksu/
