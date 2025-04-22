@@ -36,14 +36,8 @@ check_reset_prop() {
   local NAME=$1
   local EXPECTED=$2
   local VALUE=$(resetprop $NAME)
-  [ -z $VALUE ] || [ $VALUE = $EXPECTED ] || resetprop $NAME $EXPECTED
-}
-
-check_vbmeta_prop() {
-  local NAME=$1
-  local EXPECTED=$2
-  local VALUE=$(resetprop $NAME)
-  [ -z $VALUE ] && resetprop $NAME $EXPECTED
+  [ -z $VALUE ] || [ $VALUE = $EXPECTED ] || resetprop $NAME $EXPECTED # if the property is not what we expect
+  [ -z $VALUE ] && resetprop $NAME $EXPECTED # if the property is missing
 }
 
 contains_reset_prop() {
